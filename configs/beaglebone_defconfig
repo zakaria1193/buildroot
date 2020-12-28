@@ -7,6 +7,8 @@ BR2_PACKAGE_HOST_GDB_TUI=y
 BR2_PACKAGE_HOST_GDB_PYTHON3=y
 BR2_PACKAGE_HOST_GDB_SIM=y
 BR2_GDB_VERSION_9_2=y
+# BR2_TARGET_GENERIC_GETTY is not set
+BR2_ROOTFS_OVERLAY="beageblue_fsoverlay"
 BR2_ROOTFS_POST_BUILD_SCRIPT="board/beaglebone/post-build.sh"
 BR2_ROOTFS_POST_IMAGE_SCRIPT="support/scripts/genimage.sh"
 BR2_ROOTFS_POST_SCRIPT_ARGS="-c board/beaglebone/genimage.cfg"
